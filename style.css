@@ -1,7 +1,7 @@
 body {
   margin: 0;
+  font-family: 'Rubik', sans-serif;
 
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #6c7279;
   -webkit-font-smoothing: antialiased;
@@ -49,6 +49,7 @@ p {
   left: 0;
   z-index: 1000;
 }
+
 .header__logo {
   color: #fff;
   font-size: 30px;
@@ -75,6 +76,14 @@ p {
   border-bottom: 1px solid #515369;
 }
 
+.title {
+  color: #31344e;
+  font-size: 30px;
+  margin-top: 60px;
+  text-align: center;
+
+}
+
 /* Nav
 ===================*/
 
@@ -99,7 +108,7 @@ p {
 }
 
 .nav__link:hover {
-  color: rgb(243, 108, 18);
+  color: rgb(18, 228, 243);
 }
 
 /* Intro
@@ -111,10 +120,11 @@ p {
   justify-content: center;
   height: 100vh;
   padding-top: 100px;
-  background: #31344e url("img/intro-bg1.jpg") center no-repeat;
+  background: #31344e url("img/robot.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
+
 .intro:before {
   content: "";
   width: 100%;
@@ -124,7 +134,7 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(13, 5, 41, 0.9);
 }
 
 .intro__inner {
@@ -137,8 +147,6 @@ p {
 
 .intro__title {
   margin: 0 0 30px;
-
-  font-family: "Open Sans", sans-serif;
   font-size: 65px;
   line-height: 1.1;
   color: #fff;
@@ -164,7 +172,6 @@ p {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  font-family: "Raleway", sans-serif;
   font-size: 13px;
   color: #fff;
   font-weight: 600;
@@ -178,12 +185,16 @@ p {
   -o-border-radius: 5px;
 }
 
-.btn--orange {
-  background-color: rgb(243, 108, 18);
+.btn--yellow {
+  background-color: rgb(243, 209, 18);
+  font-weight: 700;
+
 }
 
-.btn--orange:hover {
-  background-color: rgb(218, 91, 6);
+.btn--yellow:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(12, 20, 90);
+
 }
 
 .btn--long {
@@ -195,7 +206,7 @@ p {
 .features {
   display: flex;
   flex-wrap: wrap;
-  margin: 95px 0;
+  margin: 20px 0 95px 0;
 }
 
 .features__item {
@@ -229,15 +240,14 @@ p {
 .works {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 45px;
 }
 
 .works__item {
   width: 25%;
   height: 350px;
-
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
-
   position: relative;
   overflow: hidden;
 }
@@ -247,13 +257,10 @@ p {
 }
 
 .works__photo {
-  min-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-
-  transform: translate3d(-50%, -50%, 0);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .works__content {
@@ -263,7 +270,7 @@ p {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(243, 108, 18, 0.9);
+  background-color: rgba(12, 20, 90, 0.9);
 
   opacity: 0;
 
@@ -301,6 +308,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+  margin-top: 45px;
 }
 
 .team_item {
@@ -403,7 +411,7 @@ p {
 /* Testimonials 
 ===================*/
 .reviews {
-  background: rgb(30, 139, 153);
+  background: rgb(12, 20, 90);
   overflow: hidden;
 }
 
@@ -428,7 +436,6 @@ p {
 }
 
 .reviews_text {
-  font-family: "Cardo", sans-serif;
   font-style: italic;
   font-size: 36px;
   line-height: 1.2;
@@ -596,6 +603,7 @@ p {
 }
 
 @media (max-width: 991px) {
+
   /* nav */
   .nav {
     display: none;
@@ -694,6 +702,7 @@ p {
 }
 
 @media (max-width: 767px) {
+
   /* intro */
   .intro {
     height: auto;
